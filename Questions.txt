@@ -1,0 +1,23 @@
+● How would you deploy this application in production?
+Deployment Strategy:
+Deploy using AWS ECS or Fargate for container orchestration.
+Use RDS for PostgreSQL.
+
+● What other components would you want to add to make this production ready?
+Production Ready Components:
+Add monitoring with CloudWatch.
+Implement retries and error handling.
+
+● How can this application scale with a growing dataset.
+Scaling:
+Partitioning and sharding in PostgreSQL.
+Horizontal scaling of the ETL application using ECS.
+
+● How can PII be recovered later on?
+Recovering PII:
+Store original PII in a secure, encrypted database if recovery is needed.
+
+● What are the assumptions you made?
+Assumptions:
+JSON structure is consistent.
+Masked values are non-reversible and securely hashed.
